@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3 (Python 3.13.3 on win32)" generated="2025-06-04T11:34:32.894388" rpa="false" schemaversion="5">
+<suite id="s1" name="Ebay" source="c:\Users\yuri.clovandi\Documents\Aula robot\ebay.robot">
+<test id="s1-t1" name="Teste de Login" line="4">
+<kw name="Abrir a página do ebay">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-04T11:34:33.732022" level="INFO">Opening browser 'chrome' to base url 'https://www.ebay.com/'.</msg>
+<arg>https://www.ebay.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-04T11:34:33.731475" elapsed="3.023358"/>
+</kw>
+<status status="PASS" start="2025-06-04T11:34:33.729330" elapsed="3.025956"/>
+</kw>
+<kw name="Inserir produto em pesquisar">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-04T11:34:36.761152" level="INFO">Typing text 'Alexa' into text field 'id=gh-ac'.</msg>
+<arg>id=gh-ac</arg>
+<arg>Alexa</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-04T11:34:36.760539" elapsed="0.255957"/>
+</kw>
+<status status="PASS" start="2025-06-04T11:34:36.759734" elapsed="0.257104"/>
+</kw>
+<kw name="Clicar no botão de pesquisar">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-04T11:34:37.018565" level="INFO">Clicking button 'id:gh-search-btn'.</msg>
+<arg>id:gh-search-btn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-04T11:34:37.018165" elapsed="2.306199"/>
+</kw>
+<status status="PASS" start="2025-06-04T11:34:37.017524" elapsed="2.307154"/>
+</kw>
+<status status="PASS" start="2025-06-04T11:34:33.728233" elapsed="5.597228"/>
+</test>
+<status status="PASS" start="2025-06-04T11:34:32.909446" elapsed="6.418943"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Ebay" id="s1" pass="1" fail="0" skip="0">Ebay</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
